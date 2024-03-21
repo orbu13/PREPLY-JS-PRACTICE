@@ -74,12 +74,45 @@
 // }
 
 
-function CBA(x,y,a){
-    if(x < y && x < a){
-        console.log(x);
-    }else if(y < x && y < a){
-        console.log(y);
+// function CBA(x,y,a){
+//     if(x < y && x < a){
+//         console.log(x);
+//     }else if(y < x && y < a){
+//         console.log(y);
+//     }else{
+//         console.log(a);
+//     }
+// }
+// from the following array create a function 
+// that shows the words that match and how many times they occur
+
+const MatchedArray=["one","two","thee","two","zero","four","three","zero","one","one","two"]
+
+function showing(MatchedArray){
+    let one = [];
+    let two = [];
+    let three = [];
+    let four = [];
+    let zero = []; 
+
+    for(let i =0; i <MatchedArray.length; i++){
+      if (MatchedArray[i] == "one"){
+        one.push(MatchedArray[i])
+    }else if(MatchedArray[i] == "two"){
+        two.push(MatchedArray[i])
+    }else if(MatchedArray[i] == "three"){
+        three.push(MatchedArray[i])
+    }else if(MatchedArray[i] == "four"){
+        four.push(MatchedArray[i])
+    }else if(MatchedArray[i] == "zero"){
+        zero.push(MatchedArray[i])
     }else{
-        console.log(a);
+
     }
+    }
+    console.log(one.length);
+    console.log(two.length);
+    console.log(three.length);
+    console.log(four.length);
+    console.log(zero.length);
 }
