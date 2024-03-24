@@ -64,17 +64,14 @@ for(let i = 0; i < arrayOfMaxNumber.length; i ++){
 // Exercise 5: Reverse a String
 // Write a program that takes a string and uses a for loop to reverse the characters in the string. Print the reversed string.
 
-let arrayOfString = ["hello, how are you ? is today sunday?"]
-console.log(arrayOfString);
+let originalString = "Hello, good morning!"
+console.log(originalString);
 
- let newArrayOfString = ""
+let NewString = ""
 
- function revers(arrayOfString){
-    for(let i = arrayOfString.length - 1; i >= 0; i --);{
-        newArrayOfString += arrayOfString=[i]
-
-    }
+for (let i = originalString.length - 1; i >= 0; i --){
+    console.log(originalString[i]);
+    NewString += NewString = originalString[i]
 }
-revers(arrayOfString)
-console.log(newArrayOfString);
+console.log(NewString);
 
